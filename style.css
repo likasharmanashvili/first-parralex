@@ -1,0 +1,15 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{background-image: url(pexels-frank-cone-3607542.jpg);background-size: cover;background-repeat: no-repeat;font-family: Lemon;}
+.header >img{width: 1100px;}
+.header >h1{font-size: 70px;color: rgb(248, 242, 242);}
+.wrapper>p{font-size: 20px;color: azure;background-color: black;padding: 30px;width: 500px;margin-left: 500px;}
+.wrapper{height: 100vh;overflow-y: auto;overflow-x: hidden;perspective: 10px;}
+.header{position: relative;display: flex;justify-content: center;align-items: center;height: 100%;transform-style: preserve-3d;z-index: -1;}
+.background{
+    position: absolute;height: 100%;width: 100%;object-fit: cover;z-index: -1;
+}
+
+
+.foreground {position: absolute;height: 100%;width: 100%;object-fit: cover;z-index: 1;}
+.background{transform: translateZ(-10px) scale(2);}
+.foreground{transform: translateZ(-5px) scale(1.5);margin-top: 440px;}
